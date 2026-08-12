@@ -1,0 +1,12 @@
+SecurityGroup,Permission
+GG-IT-HelpDesk,Reset User Passwords
+GG-IT-HelpDesk,Unlock User Accounts
+GG-IT-HelpDesk,View User Device Information
+GG-HR-Users,View HR Records
+GG-HR-Users,Manage Employee Records
+GG-Finance-Accountants,View Financial Reports
+GG-Finance-Accountants,Access Accounting System
+GG-Marketing-Users,Access Marketing Platform
+GG-Marketing-Users,Manage Marketing Content
+GG-Sales-Users,Access CRM
+GG-Sales-Users,View Customer Records

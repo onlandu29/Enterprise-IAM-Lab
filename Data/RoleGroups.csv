@@ -1,0 +1,6 @@
+IAMRole,SecurityGroup
+IT_HelpDesk,GG-IT-HelpDesk
+HR_User,GG-HR-Users
+Finance_Accountant,GG-Finance-Accountants
+Marketing_User,GG-Marketing-Users
+Sales_User,GG-Sales-Users
