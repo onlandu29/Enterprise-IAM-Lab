@@ -1,0 +1,6 @@
+"EmployeeID","Decision","Action","SecurityGroup","Reason","Status"
+"1001","Keep","Keep Access","GG-IT-HelpDesk","Still requires help desk access","Approved"
+"1002","Keep","Keep Access","GG-HR-Users","Still requires HR access","Approved"
+"1003","Revoke","Remove Access","GG-Finance-Accountants","No longer requires accounting access","Approved"
+"1004","Keep","Keep Access","GG-Marketing-Users","Still requires marketing access","Approved"
+"1005","Revoke","Remove Access","GG-Sales-Users","Access should be removed","Approved"

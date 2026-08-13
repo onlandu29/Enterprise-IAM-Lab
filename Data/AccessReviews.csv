@@ -1,0 +1,6 @@
+EmployeeID,ReviewDecision,Reason
+1001,Keep,Still requires help desk access
+1002,Keep,Still requires HR access
+1003,Revoke,No longer requires accounting access
+1004,Keep,Still requires marketing access
+1005,Revoke,Access should be removed
