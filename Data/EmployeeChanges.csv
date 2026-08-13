@@ -1,0 +1,4 @@
+EmployeeID,ChangeType,NewJobTitle,Status
+1006,Joiner,Accountant,Active
+1003,Mover,Marketing Coordinator,Active
+1005,Leaver,Sales Representative,Terminated

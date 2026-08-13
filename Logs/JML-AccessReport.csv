@@ -1,0 +1,4 @@
+"EmployeeID","ChangeType","Action","OldGroup","NewGroup","Status"
+"1006","Joiner","Provision","","GG-Finance-Accountants","Approved"
+"1003","Mover","Replace Access","GG-Finance-Accountants","GG-Marketing-Users","Approved"
+"1005","Leaver","Deprovision","GG-Sales-Users","","Approved"
