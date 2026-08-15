@@ -1,0 +1,4 @@
+Role1,Role2,ConflictReason
+Finance_Accountant,Payment_Approver,User could create and approve financial transactions
+HR_User,Payroll_Admin,User could manage employee records and payroll
+IT_HelpDesk,Security_Admin,User could support accounts and administer security controls

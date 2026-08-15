@@ -1,0 +1,4 @@
+EmployeeID,RequestedRole,RequestReason
+1003,Payment_Approver,Needs payment approval responsibilities
+1003,Marketing_User,Needs access to marketing platform
+1001,Security_Admin,Needs elevated security administration access

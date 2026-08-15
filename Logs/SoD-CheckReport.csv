@@ -1,0 +1,4 @@
+"EmployeeID","RequestedRole","CurrentRole","Decision","ConflictReason","RequestReason"
+"1003","Payment_Approver","Finance_Accountant","Block","User could create and approve financial transactions","Needs payment approval responsibilities"
+"1003","Marketing_User","Finance_Accountant","Allow","","Needs access to marketing platform"
+"1001","Security_Admin","IT_HelpDesk","Block","User could support accounts and administer security controls","Needs elevated security administration access"
