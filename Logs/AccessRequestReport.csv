@@ -1,0 +1,5 @@
+"RequestID","EmployeeID","RequestedRole","CurrentRole","ManagerDecision","FinalDecision","Reason","ConflictReason"
+"REQ001","1003","Payment_Approver","Finance_Accountant","Approved","Blocked","Needs payment approval responsibilities","User could create and approve financial transactions"
+"REQ002","1003","Marketing_User","Finance_Accountant","Approved","Approved","Needs access to marketing platform",""
+"REQ003","1001","Security_Admin","IT_HelpDesk","Approved","Blocked","Needs elevated security administration access","User could support accounts and administer security controls"
+"REQ004","1002","Payroll_Admin","","Denied","Denied","Manager did not approve payroll access",""

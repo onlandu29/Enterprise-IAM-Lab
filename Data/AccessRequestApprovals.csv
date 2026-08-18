@@ -1,0 +1,5 @@
+RequestID,EmployeeID,RequestedRole,ManagerDecision,Reason
+REQ001,1003,Payment_Approver,Approved,Needs payment approval responsibilities
+REQ002,1003,Marketing_User,Approved,Needs access to marketing platform
+REQ003,1001,Security_Admin,Approved,Needs elevated security administration access
+REQ004,1002,Payroll_Admin,Denied,Manager did not approve payroll access
