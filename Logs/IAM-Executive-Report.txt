@@ -1,0 +1,61 @@
+============================================================
+             ENTERPRISE IAM GOVERNANCE REPORT
+============================================================
+
+Generated: 2026-08-20 15:06:52
+
+------------------------------------------------------------
+JML LIFECYCLE ACTIVITY
+------------------------------------------------------------
+Joiners: 1
+Movers:  1
+Leavers: 1
+
+------------------------------------------------------------
+ACCESS REVIEW ACTIVITY
+------------------------------------------------------------
+Access Reviews: 5
+Access Kept: 3
+Access Revoked: 2
+Revocation Rate: 40%
+
+------------------------------------------------------------
+SEGREGATION OF DUTIES
+------------------------------------------------------------
+SoD Checks: 3
+Allowed: 1
+Blocked: 2
+Block Rate: 66.67%
+
+------------------------------------------------------------
+ACCESS REQUEST GOVERNANCE
+------------------------------------------------------------
+Total Requests: 4
+Approved: 1
+Blocked by SoD: 2
+Denied by Management: 1
+Approval Rate: 25%
+Rejection/Block Rate: 75%
+
+------------------------------------------------------------
+KEY RISK INDICATORS
+------------------------------------------------------------
+[RISK] 2 SoD conflict(s) detected and blocked
+[RISK] 2 access review finding(s) resulted in revocation
+[RISK] 2 access request(s) blocked by SoD controls
+[RISK] 1 access request(s) denied by management
+
+------------------------------------------------------------
+CONTROL SUMMARY
+------------------------------------------------------------
+[OK] RBAC role and group assignments
+[OK] Joiner/Mover/Leaver lifecycle processing
+[OK] Periodic access review
+[OK] Segregation of Duties validation
+[OK] Manager access approval
+[OK] Access request audit logging
+[OK] IAM governance metrics
+
+============================================================
+                    END OF REPORT
+============================================================
