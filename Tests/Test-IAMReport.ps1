@@ -71,6 +71,8 @@ Write-Host ""
 
 if ($passed) {
     Write-Host "IAM REPORTING TEST RESULT: PASS"
+    exit 0
 } else {
     Write-Host "IAM REPORTING TEST RESULT: FAIL"
+    exit 1
 }

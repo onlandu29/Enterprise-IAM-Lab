@@ -44,6 +44,8 @@ Write-Host ""
 
 if ($passed) {
     Write-Host "ACCESS REVIEW TEST RESULT: PASS"
+    exit 0
 } else {
     Write-Host "ACCESS REVIEW TEST RESULT: FAIL"
+    exit 1
 }

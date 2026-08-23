@@ -33,6 +33,8 @@ Write-Host ""
 
 if ($passed) {
     Write-Host "JML TEST RESULT: PASS"
+    exit 0
 } else {
     Write-Host "JML TEST RESULT: FAIL"
+    exit 1
 }

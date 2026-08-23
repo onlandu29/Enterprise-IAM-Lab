@@ -64,6 +64,8 @@ Write-Host ""
 
 if ($passed) {
     Write-Host "ACCESS REQUEST TEST RESULT: PASS"
+    exit 0
 } else {
     Write-Host "ACCESS REQUEST TEST RESULT: FAIL"
+    exit 1
 }

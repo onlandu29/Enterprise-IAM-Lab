@@ -45,6 +45,8 @@ Write-Host ""
 
 if ($passed) {
     Write-Host "SOD TEST RESULT: PASS"
+    exit 0
 } else {
     Write-Host "SOD TEST RESULT: FAIL"
+    exit 1
 }
