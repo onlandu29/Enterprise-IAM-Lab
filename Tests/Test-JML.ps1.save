@@ -1,0 +1,12 @@
+Write-Host "===== JML CONTROL TEST ====="
+
+$log = Import-Csv "./Logs/JML-AccessReport.csv"
+
+$joiners = ($log | Where-Object { $_.ChangeType -eq "Joiner" }).Count
+$ movers = ($log | Where-Object { $_.ChangeType -eq "Mover" }).Count
+$leavers = ($log | Where-Object { $_.ChangeType -eq "Leaver" }).Count
+
+$passed = $true
+
+if ($joiners -eq 1) {
+    Write-Ho
