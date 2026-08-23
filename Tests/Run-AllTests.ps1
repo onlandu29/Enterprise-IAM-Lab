@@ -23,6 +23,11 @@ $tests = @(
     @{
         Name = "IAM Reporting"
         Script = "./Tests/Test-IAMReport.ps1"
+    },
+
+    @{
+        Name = "Access Provisioning"
+        Script = "./Tests/Test-Provisioning.ps1"
     }
 )
 

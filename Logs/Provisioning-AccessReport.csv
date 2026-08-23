@@ -1,0 +1,5 @@
+"RequestID","EmployeeID","RequestedRole","FinalDecision","SecurityGroup","ProvisioningStatus"
+"REQ001","1003","Payment_Approver","Blocked","","Not Provisioned"
+"REQ002","1003","Marketing_User","Approved","GG-Marketing-Users","Provisioned"
+"REQ003","1001","Security_Admin","Blocked","","Not Provisioned"
+"REQ004","1002","Payroll_Admin","Denied","","Not Provisioned"
