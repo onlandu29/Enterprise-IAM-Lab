@@ -29,6 +29,11 @@ $tests = @(
         Name = "Access Provisioning"
         Script = "./Tests/Test-Provisioning.ps1"
     }
+
+    @{
+        Name = "Provisioning Validation"
+        Script = "./Tests/Test-ProvisioningValidation.ps1"
+    }
 )
 
 $passed = 0

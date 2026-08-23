@@ -1,0 +1,5 @@
+RequestID,EmployeeID,RequestedRole,FinalDecision
+TEST001,9999,Marketing_User,Approved
+TEST002,1003,Unknown_Role,Approved
+TEST003,1003,Marketing_User,Approved
+TEST004,1003,Marketing_User,Blocked
