@@ -5,6 +5,7 @@ Write-Host ""
 
 $requests = Import-Csv "./Logs/AccessRequestReport.csv"
 $directory = Import-Csv "./Data/ProvisioningDirectory.csv"
+$currentAccess = Import-Csv "./Data/CurrentAccess.csv"
 
 $provisioningLog = @()
 
@@ -27,8 +28,8 @@ foreach ($request in $requests) {
         $group = ""
         $status = "Not Provisioned"
         $reason = "Access request was not approved"
-    }
 
+    }
     elseif ($null -eq $employee) {
 
         Write-Host "ACTION: PROVISIONING FAILED"
@@ -38,8 +39,8 @@ directory"
         $group = ""
         $status = "Failed"
         $reason = "Employee not found"
-    }
 
+    }
     elseif ($employee.Status -ne "Active") {
 
         Write-Host "ACTION: PROVISIONING FAILED"
@@ -48,35 +49,19 @@ directory"
         $group = ""
         $status = "Failed"
         $reason = "Employee is not active"
-    }
 
+    }
     else {
 
         $group = switch ($request.RequestedRole) {
 
-            "Marketing_User" {
-                "GG-Marketing-Users"
-            }
+            "Marketing_User"     { "GG-Marketing-Users" }
+            "Sales_User"         { "GG-Sales-Users" }
+            "HR_User"            { "GG-HR-Users" }
+            "Finance_Accountant" { "GG-Finance-Accountants" }
+            "IT_HelpDesk"        { "GG-IT-HelpDesk" }
 
-            "Sales_User" {
-                "GG-Sales-Users"
-            }
-
-            "HR_User" {
-                "GG-HR-Users"
-            }
-
-            "Finance_Accountant" {
-                "GG-Finance-Accountants"
-            }
-
-            "IT_HelpDesk" {
-                "GG-IT-HelpDesk"
-            }
-
-            default {
-                ""
-            }
+            default { "" }
         }
 
         if ([string]::IsNullOrWhiteSpace($group)) {
@@ -87,21 +72,37 @@ directory"
             $status = "Failed"
             $reason = "No security group mapping exists"
             $group = ""
-        }
 
+        }
         else {
 
-            Write-Host "ACTION: PROVISION ACCESS"
-            Write-Host "Security Group: $group"
-            Write-Host "Provisioning Status: SUCCESS"
+            $existingAccess = $currentAccess | Where-Object {
+                $_.EmployeeID -eq $request.EmployeeID -and
+                $_.SecurityGroup -eq $group
+            }
 
-            $status = "Provisioned"
-            $reason = "Access provisioned successfully"
+            if ($null -ne $existingAccess) {
+
+                Write-Host "ACTION: NO PROVISIONING"
+                Write-Host "Reason: Access already exists"
+
+                $status = "Already Provisioned"
+                $reason = "Access already exists"
+
+            }
+            else {
+
+                Write-Host "ACTION: PROVISION ACCESS"
+                Write-Host "Security Group: $group"
+                Write-Host "Provisioning Status: SUCCESS"
+
+                $status = "Provisioned"
+                $reason = "Access provisioned successfully"
+            }
         }
     }
 
     $provisioningLog += [PSCustomObject]@{
-
         RequestID          = $request.RequestID
         EmployeeID         = $request.EmployeeID
         RequestedRole      = $request.RequestedRole
@@ -114,7 +115,7 @@ directory"
     Write-Host ""
 }
 
-$provisioningLog | Export-Csv "./Logs/Provisioning-AccessReport.csv" 
+$provisioningLog | Export-Csv "./Logs/Provisioning-AccessReport.csv"
 
 Write-Host "=================================================="
 Write-Host "Provisioning report saved to:"

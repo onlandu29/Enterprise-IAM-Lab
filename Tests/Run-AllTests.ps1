@@ -33,6 +33,12 @@ $tests = @(
     @{
         Name = "Provisioning Validation"
         Script = "./Tests/Test-ProvisioningValidation.ps1"
+    },
+
+    @{
+    
+        Name = "Duplicate Provisioning"
+        Script = "./Tests/Test-ProvisioningValidation.ps1"
     }
 )
 

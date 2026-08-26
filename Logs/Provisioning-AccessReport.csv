@@ -1,5 +1,5 @@
 "RequestID","EmployeeID","RequestedRole","FinalDecision","SecurityGroup","ProvisioningStatus","Reason"
 "REQ001","1003","Payment_Approver","Blocked","","Not Provisioned","Access request was not approved"
-"REQ002","1003","Marketing_User","Approved","GG-Marketing-Users","Provisioned","Access provisioned successfully"
+"REQ002","1003","Marketing_User","Approved","GG-Marketing-Users","Already Provisioned","Access already exists"
 "REQ003","1001","Security_Admin","Blocked","","Not Provisioned","Access request was not approved"
 "REQ004","1002","Payroll_Admin","Denied","","Not Provisioned","Access request was not approved"
