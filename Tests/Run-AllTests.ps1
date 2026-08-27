@@ -38,7 +38,12 @@ $tests = @(
     @{
     
         Name = "Duplicate Provisioning"
-        Script = "./Tests/Test-ProvisioningValidation.ps1"
+        Script = "./Tests/Test-DuplicateProvisioning.ps1"
+    },
+    @{
+
+        Name = "Access Reconciliation"
+        Script = "./Tests/Test-AccessReconciliation.ps1"
     }
 )
 

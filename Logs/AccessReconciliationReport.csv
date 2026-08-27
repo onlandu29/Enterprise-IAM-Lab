@@ -1,0 +1,4 @@
+"EmployeeID","EmployeeName","IAMRole","ExpectedGroup","ActualGroup","Reconciliation","Reason"
+"1001","John Smith","IT_HelpDesk","GG-IT-HelpDesk","GG-IT-HelpDesk","Match","Actual access matches expected access"
+"1002","Sarah Johnson","HR_User","GG-HR-Users","GG-HR-Users","Match","Actual access matches expected access"
+"1003","Michael Williams","Finance_Accountant","GG-Finance-Accountants","GG-Marketing-Users","Mismatch","Actual access does not match expected access"
