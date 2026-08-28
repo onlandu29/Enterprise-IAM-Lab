@@ -1,0 +1,4 @@
+"EmployeeID","EmployeeName","IAMRole","CurrentGroup","ExpectedGroup","Action","RemoveGroup","AddGroup","Status","Reason"
+"1001","John Smith","IT_HelpDesk","GG-IT-HelpDesk","GG-IT-HelpDesk","No Action","","","Compliant","Access matches assigned IAM role"
+"1002","Sarah Johnson","HR_User","GG-HR-Users","GG-HR-Users","No Action","","","Compliant","Access matches assigned IAM role"
+"1003","Michael Williams","Finance_Accountant","GG-Marketing-Users","GG-Finance-Accountants","Remediate Access","GG-Marketing-Users","GG-Finance-Accountants","Remediation Required","Actual access does not match assigned IAM role"
