@@ -54,6 +54,11 @@ $tests = @(
 
         Name = "Access Certification"
         Script = "./Tests/Test-AccessCertification.ps1"
+    },
+    @{
+
+        Name = "IAM Audit Trail"
+        Script = "./Tests/Test-IAMAuditTrail.ps1"
     }
 )
 
