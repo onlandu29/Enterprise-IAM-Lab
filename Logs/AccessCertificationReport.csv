@@ -1,0 +1,4 @@
+"EmployeeID","EmployeeName","IAMRole","CurrentGroup","ExpectedGroup","Reconciliation","RemediationStatus","ApprovedRequests","CertificationStatus","ExceptionReason"
+"1001","John Smith","IT_HelpDesk","GG-IT-HelpDesk","GG-IT-HelpDesk","Compliant","Compliant","0","Certified","Access is compliant with assigned IAM role"
+"1002","Sarah Johnson","HR_User","GG-HR-Users","GG-HR-Users","Compliant","Compliant","0","Certified","Access is compliant with assigned IAM role"
+"1003","Michael Williams","Finance_Accountant","GG-Marketing-Users","GG-Finance-Accountants","Remediation Required","Remediation Required","1","Exception","Access mismatch requires remediation"
