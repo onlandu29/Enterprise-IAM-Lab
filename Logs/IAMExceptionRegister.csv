@@ -1,0 +1,2 @@
+"ExceptionID","EmployeeID","EmployeeName","IAMRole","CurrentGroup","ExpectedGroup","Control","ExceptionType","RemediationStatus","CertificationStatus","RequiredAction","ExceptionStatus","Reason"
+"EXC-1003","1003","Michael Williams","Finance_Accountant","GG-Marketing-Users","GG-Finance-Accountants","Access Reconciliation","Access Mismatch","Remediation Required","Exception","Remediate Access","Open","Actual access does not match expected access"

@@ -59,6 +59,11 @@ $tests = @(
 
         Name = "IAM Audit Trail"
         Script = "./Tests/Test-IAMAuditTrail.ps1"
+    },
+    @{
+
+        Name = "IAM Exception Register"
+        Script = "./Tests/Test-IAMExceptionRegister.ps1"
     }
 )
 
