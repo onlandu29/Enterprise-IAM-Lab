@@ -1,0 +1,8 @@
+"RequestID","EmployeeID","RequestedRole","PrivilegeLevel","ManagerDecision","FinalDecision","PAGDecision","Reason"
+"REQ001","1003","Payment_Approver","Privileged","Approved","Blocked","Blocked","Required approval or SoD requirements not 
+satisfied"
+"REQ002","1003","Marketing_User","Standard","Approved","Approved","Eligible","Approval and SoD requirements satisfied"
+"REQ003","1001","Security_Admin","Privileged","Approved","Blocked","Blocked","Required approval or SoD requirements not 
+satisfied"
+"REQ004","1002","Payroll_Admin","Privileged","Denied","Denied","Blocked","Required approval or SoD requirements not 
+satisfied"

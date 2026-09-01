@@ -1,0 +1,8 @@
+IAMRole,PrivilegeLevel,ApprovalRequired,SoDCheckRequired
+IT_HelpDesk,Standard,Yes,Yes
+HR_User,Standard,Yes,Yes
+Marketing_User,Standard,Yes,Yes
+Finance_Accountant,Elevated,Yes,Yes
+Payment_Approver,Privileged,Yes,Yes
+Payroll_Admin,Privileged,Yes,Yes
+Security_Admin,Privileged,Yes,Yes

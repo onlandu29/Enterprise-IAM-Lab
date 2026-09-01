@@ -64,6 +64,11 @@ $tests = @(
 
         Name = "IAM Exception Register"
         Script = "./Tests/Test-IAMExceptionRegister.ps1"
+    },
+    @{
+
+        Name = "Privileged Access Governance"
+        Script = "./Tests/Test-PrivilegedAccess.ps1"
     }
 )
 
