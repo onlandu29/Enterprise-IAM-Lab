@@ -69,6 +69,11 @@ $tests = @(
 
         Name = "Privileged Access Governance"
         Script = "./Tests/Test-PrivilegedAccess.ps1"
+    },
+    @{
+
+        Name = "IAM Control Metrics"
+        Script = "./Tests/Test-IAMMetrics.ps1"
     }
 )
 
