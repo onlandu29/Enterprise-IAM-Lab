@@ -28,7 +28,7 @@ $tests = @(
     @{
         Name = "Access Provisioning"
         Script = "./Tests/Test-Provisioning.ps1"
-    }
+    },
 
     @{
         Name = "Provisioning Validation"
@@ -74,6 +74,11 @@ $tests = @(
 
         Name = "IAM Control Metrics"
         Script = "./Tests/Test-IAMMetrics.ps1"
+    },
+    @{
+
+        Name = "IAM Control Health"
+        Script = "./Tests/Test-IAMControlHealth.ps1"
     }
 )
 
