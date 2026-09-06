@@ -33,6 +33,8 @@ The lab simulates an enterprise IAM environment where employee identities are ma
 
 ## IAM Control Architecture
 
+**Detailed architecture documentation:** [IAM Architecture](Docs/IAM-Architecture.md)
+
 ```text
 Employee Identity
        |
