@@ -1,4 +1,5 @@
 Write-Host "===== PRIVILEGED ACCESS GOVERNANCE CONTROL TEST ====="
+
 Write-Host ""
 
 $report = Import-Csv "./Logs/PrivilegedAccessReport.csv"
@@ -20,12 +21,13 @@ $standard = @(
 $blockedPrivileged = @(
     $report | Where-Object {
         $_.PrivilegeLevel -eq "Privileged" -and
-        $_.PAGDecision -eq "Blocked"
+        $_.FinalDecision -eq "Blocked"
     }
 ).Count
 
-$eligible = @(
+$eligiblePrivileged = @(
     $report | Where-Object {
+        $_.PrivilegeLevel -eq "Privileged" -and
         $_.PAGDecision -eq "Eligible"
     }
 ).Count
@@ -46,19 +48,19 @@ else {
     $failed = $true
 }
 
-if ($blockedPrivileged -eq 3) {
-    Write-Host "[PASS] Privileged requests blocked: 3"
+if ($blockedPrivileged -eq 2) {
+    Write-Host "[PASS] Privileged requests blocked: 2"
 }
 else {
     Write-Host "[FAIL] Privileged requests blocked: $blockedPrivileged"
     $failed = $true
 }
 
-if ($eligible -eq 1) {
-    Write-Host "[PASS] Eligible requests: 1"
+if ($eligiblePrivileged -eq 0) {
+    Write-Host "[PASS] Eligible privileged requests: 0"
 }
 else {
-    Write-Host "[FAIL] Eligible requests: $eligible"
+    Write-Host "[FAIL] Eligible privileged requests: $eligiblePrivileged"
     $failed = $true
 }
 
@@ -98,12 +100,13 @@ $payroll = $report | Where-Object {
 
 if (
     $payroll.PrivilegeLevel -eq "Privileged" -and
-    $payroll.PAGDecision -eq "Blocked"
+    $payroll.ManagerDecision -eq "Denied" -and
+    $payroll.FinalDecision -eq "Denied"
 ) {
-    Write-Host "[PASS] REQ004 privileged payroll access blocked"
+    Write-Host "[PASS] REQ004 privileged payroll access denied by manager"
 }
 else {
-    Write-Host "[FAIL] REQ004 privileged payroll access control failed"
+    Write-Host "[FAIL] REQ004 privileged payroll access denial control failed"
     $failed = $true
 }
 
