@@ -4,6 +4,18 @@ A PowerShell-based Identity and Access Management (IAM) lab that simulates enter
 
 This project is designed as a portfolio demonstration of how IAM controls can work together across the identity lifecycle.
 
+
+### Portfolio Snapshot
+
+| Area | Implementation |
+|---|---|
+| **IAM Controls** | JML, RBAC, Access Requests, SoD, Privileged Access, Provisioning, Reconciliation, Remediation, Certification |
+| **Governance** | Exception Management, Audit Trail, Risk Register, Control Dashboard |
+| **Automation** | PowerShell-based IAM workflows and reporting |
+| **Validation** | 16 automated control tests — 16 passed, 0 failed |
+| **Evidence** | Operational logs, control reports, metrics, certifications, and audit events |
+| **Documentation** | Architecture, Evidence Index, Operations Runbook, Risk Register, Control Dashboard |
+
 ---
 
 ## Project Overview
