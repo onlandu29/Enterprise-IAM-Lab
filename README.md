@@ -31,6 +31,17 @@ The lab simulates an enterprise IAM environment where employee identities are ma
 
 ---
 
+## Architecture Overview
+
+![Enterprise IAM Architecture](Docs/images/IAM-Architecture-Diagram.png)
+
+The diagram below shows how identity lifecycle management, RBAC, access
+requests, security controls, provisioning, reconciliation, remediation,
+certification, exception management, audit logging, metrics, and control
+health work together as an integrated IAM governance workflow.
+
+---
+
 ## IAM Control Architecture
 
 **Detailed architecture documentation:** [IAM Architecture](Docs/IAM-Architecture.md)
