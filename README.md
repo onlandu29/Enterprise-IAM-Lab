@@ -258,3 +258,30 @@ Potential future enhancements include:
 ## Author
 
 Built as an IAM engineering portfolio project demonstrating identity governance, access control, automation, auditability, and security control validation.
+
+---
+
+## Documentation
+
+The following documents describe the lab's architecture, operational procedures, control evidence, and governance approach.
+
+| Document | Description |
+|---|---|
+| [IAM Architecture](Docs/IAM-Architecture.md) | System components, workflows, and control relationships |
+| [IAM Control Evidence](Docs/IAM-Control-Evidence.md) | Evidence supporting key IAM control scenarios and findings |
+| [IAM Evidence Index](Docs/IAM-Evidence-Index.md) | Index of generated logs, reports, and control artifacts |
+| [IAM Operations Runbook](Docs/IAM-Operations-Runbook.md) | Procedures for running and reviewing IAM workflows |
+| [IAM Risk Register](Docs/IAM-Risk-Register.md) | Documented IAM risks, impacts, and mitigation approaches |
+| [IAM Control Dashboard](Docs/IAM-Control-Dashboard.md) | Overview of control status, metrics, and unresolved findings |
+
+### Current Demonstration Finding
+
+The sample environment contains an intentionally unresolved access mismatch for Employee `1003`:
+
+- **Expected group:** `GG-Finance-Accountants`
+- **Current group:** `GG-Marketing-Users`
+- **Exception:** `EXC-1003`
+- **Status:** Open
+- **Required action:** Remove the incorrect group and assign the expected group.
+
+The lab detects the mismatch, generates a remediation plan, records the certification exception, and tracks the issue in the exception register. These are simulated workflows: the scripts do not modify a production identity platform or independently change the employee's actual access.
